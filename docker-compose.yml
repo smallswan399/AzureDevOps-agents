@@ -1,0 +1,12 @@
+version: "2.4"
+services: 
+    docker:
+        image: devopsubuntu16.04-docker-nodejs
+        environment: 
+            - AZP_URL=${AZP_URL}
+            - AZP_TOKEN=${AZP_TOKEN}
+            - AZP_AGENT_NAME=devopsubuntu16.04-docker-nodejs
+#.env
+#COMPOSE_PROJECT_NAME=azuredevop
+#AZP_URL=
+#AZP_TOKEN=

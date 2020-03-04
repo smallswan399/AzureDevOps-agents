@@ -48,9 +48,9 @@ do
 
   print_info "Building Node.js image"
 
-  cd ubuntu$VERSION-nodejs
+  cd ubuntu$VERSION-docker-nodejs
 
-  docker build -t devopsubuntu$VERSION-nodejs:latest .
+  docker build -t devopsubuntu$VERSION-docker-nodejs:latest .
 
   cd ..
 done
