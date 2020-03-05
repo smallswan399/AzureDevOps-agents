@@ -1,4 +1,4 @@
-FROM devopsubuntu16.04-docker:latest
+FROM crazyzebra684/ubuntu16.04-docker:51
 
 COPY scripts /scripts
 
