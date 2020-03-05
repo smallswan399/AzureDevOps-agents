@@ -1,4 +1,4 @@
-FROM devopsubuntu16.04:latest
+FROM crazyzebra684/ubuntu16.04-base:50
 
 COPY scripts /scripts
 
