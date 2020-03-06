@@ -47,10 +47,10 @@ RUN sudo apt-get install dotnet-sdk-3.1
 
 # Docker CLI
 RUN sudo apt-get update
-RUN sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
-RUN sudo curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+RUN sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 RUN sudo apt-key fingerprint 0EBFCD88
-RUN sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+RUN sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 RUN sudo apt-get update
 RUN sudo apt-get install docker-ce-cli -y
 
