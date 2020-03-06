@@ -1,4 +1,4 @@
-FROM devopsubuntu18.04:latest
+FROM crazyzebra684/ubuntu18.04-base
 
 COPY scripts /scripts
 
