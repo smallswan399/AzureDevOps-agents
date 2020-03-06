@@ -55,7 +55,7 @@ RUN apt-get update
 RUN apt-get install docker-ce-cli -y
 
 # Nodejs
-RUN curl -sL https://deb.nodesource.com/setup_12.x | -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 
 # Angular
