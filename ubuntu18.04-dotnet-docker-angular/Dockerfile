@@ -61,6 +61,10 @@ RUN sudo apt-get install -y nodejs
 # Angular
 RUN sudo npm install -g @angular/cli
 
+# Flubu + dotnet-version-cli
+RUN sudo dotnet tool install --global FlubuCore.GlobalTool
+RUN sudo dotnet tool install -g dotnet-version-cli
+
 WORKDIR /azp
 
 COPY ./start.sh .
