@@ -62,9 +62,8 @@ RUN apt-get install -y nodejs
 RUN npm install -g @angular/cli
 
 # Flubu + dotnet-version-cli
-RUN dotnet tool install --global FlubuCore.GlobalTool
-RUN dotnet tool install -g dotnet-version-cli
-RUN echo 'export PATH="$PATH:/root/.dotnet/tools"' >> ~/.bashrc
+RUN dotnet tool install FlubuCore.GlobalTool --tool-path /usr/local/bin
+RUN dotnet tool install dotnet-version-cli --tool-path /usr/local/bin
 
 WORKDIR /azp
 
