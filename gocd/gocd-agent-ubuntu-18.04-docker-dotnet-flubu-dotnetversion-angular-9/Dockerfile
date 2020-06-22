@@ -1,4 +1,4 @@
-FROM gocd/gocd-agent-ubuntu-18.04
+FROM gocd/gocd-agent-ubuntu-18.04:v20.4.0
 
 USER root
 
