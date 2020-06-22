@@ -33,7 +33,7 @@ RUN apt-get install -y nodejs
 RUN npm install -g @angular/cli
 
 # Flubu + dotnet-version-cli
-RUN dotnet tool install FlubuCore.GlobalTool --tool-path /usr/local/bin
+RUN dotnet tool install FlubuCore.GlobalTool --version 4.3.7 --tool-path /usr/local/bin
 RUN dotnet tool install dotnet-version-cli --tool-path /usr/local/bin
 
 USER go
