@@ -3,7 +3,9 @@ FROM gocd/gocd-agent-ubuntu-18.04:v20.4.0
 USER root
 
 # Install tools
+RUN apt-get update
 RUN apt-get install wget
+RUN apt-get install software-properties-common
 
 # Dotnet core sdk
 RUN wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
