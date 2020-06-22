@@ -14,7 +14,7 @@ RUN add-apt-repository universe
 RUN apt-get update
 RUN apt-get install apt-transport-https
 RUN apt-get update
-RUN apt-get install dotnet-sdk-3.1
+RUN apt-get install dotnet-sdk-3.1 -y
 
 # Docker CLI
 RUN apt-get update
