@@ -23,4 +23,11 @@ RUN apt-get update; \
   apt-get update && \
   apt-get install -y dotnet-sdk-3.1
 
+# Install Nodejs12
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get install -y nodejs
+
+# Install Angular-cli 9
+RUN npm install -g @angular/cli
+
 USER jenkins
